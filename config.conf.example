@@ -1,0 +1,86 @@
+#===============================================================================
+# CLOUD PHONE MONITOR - Configuration File
+# Edit nilai-nilah di bawah mengikut keperluan anda
+#===============================================================================
+
+# Nama device (untuk paparan dalam notification)
+DEVICE_NAME="MyCloudPhone"
+
+# Interval semakan status dalam saat (default: 60 saat)
+CHECK_INTERVAL=60
+
+#===============================================================================
+# NOTIFICATION SETTINGS
+#===============================================================================
+
+# Discord Webhook URL
+# Dapatkan dari: Server Settings > Integrations > Webhooks > New Webhook
+DISCORD_WEBHOOK="https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN"
+
+# Telegram Bot Token
+# Cipta bot baru dengan @BotFather dan dapatkan token
+TELEGRAM_TOKEN="YOUR_BOT_TOKEN"
+
+# Telegram Chat ID
+# Chat ID personal: hantar mesej ke bot, akses https://api.telegram.org/botYOUR_TOKEN/getUpdates
+# Chat ID group: tambah @RawDataBot ke group untuk dapatkan chat ID
+TELEGRAM_CHAT_ID="YOUR_CHAT_ID"
+
+#===============================================================================
+# DISCORD BOT SETTINGS (For Discord Bot Commands)
+#===============================================================================
+
+# Discord Bot Token
+# Dapatkan dari: Discord Developer Portal > Your App > Bot > Token
+DISCORD_BOT_TOKEN=""
+
+# Discord Application ID
+# Dapatkan dari: Discord Developer Portal > Your App > General Information
+DISCORD_APP_ID=""
+
+# Discord Guild (Server) ID
+# Enable Developer Mode di Discord, right-click server > Copy ID
+DISCORD_GUILD_ID=""
+
+# Discord Channel ID
+# Right-click channel > Copy ID
+DISCORD_CHANNEL_ID=""
+
+#===============================================================================
+# APPS TO MONITOR
+#===============================================================================
+
+# Format: package_name|display_name|auto_restart
+# Contoh: com.whatsapp|WhatsApp|true
+# Pisahkan dengan koma untuk multiple apps
+
+# Contoh apps:
+# - WhatsApp: com.whatsapp
+# - Telegram: org.telegram.messenger
+# - Discord: com.discord
+# - TikTok: com.zhiliaoapp.musically
+# - Facebook: com.facebook.katana
+# - Instagram: com.instagram.android
+# - Shopee: com.shopee.id
+# - Grab: com.grab.taxibooking
+# - Gojek: com.gojek.app
+# - Spotify: com.spotify.music
+# - YouTube: com.google.android.youtube
+
+APP_LIST="com.whatsapp|WhatsApp|true,org.telegram.messenger|Telegram|true,com.discord|Discord|true"
+
+#===============================================================================
+# NOTIFICATION PREFERENCES
+#===============================================================================
+
+# Notifikasi bila status berubah
+NOTIFY_ON_STATUS_CHANGE=true
+
+# Notifikasi bila app crash
+NOTIFY_ON_CRASH=true
+
+# Notifikasi bila app auto-restart
+NOTIFY_ON_RESTART=true
+
+# Hantar laporan setiap 1 jam
+HOURLY_REPORT=true
