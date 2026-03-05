@@ -1,0 +1,30 @@
+# Config files dengan secrets
+config.conf
+
+# Log files
+*.log
+
+# PID files
+*.pid
+
+# Status files
+status.json
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Backups
+*.bak
+*.backup
